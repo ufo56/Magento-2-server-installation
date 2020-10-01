@@ -8,21 +8,31 @@ to install simply call `curl -o magenx.sh https://magenx.sh && bash magenx.sh`
 
 or `curl -o magenx.sh -L magenx.sh && bash magenx.sh`
 
+or `curl -LO magenx.sh/magenx.sh`
+
+you can run in screen to have indestructible session:
+
+```
+dnf install -y epel-release; dnf install -y screen
+screen
+bash magenx.sh
+```
+
 
 #### MagenX - Server Configuration for Magento 2 Open Source
 Get a fully pre-configured server with Magento and LEMP stack in just 20 minutes.
 
 Magento installation including: <br/>
 - WEBMIN CONTROL PANEL
-- VARNISH
-- NGINX
+- VARNISH 6.4
+- NGINX 1.9x
 - PHP 7
 - REDIS (2 instances 6379|6380)
 - SFTP (custom port + chroot)
 - MALWARE REALTIME MONITOR
 - CLAMAV ENGINE
 - MWSCAN
-- PERCONA (5.7)
+- PERCONA 8
 - PERCONA TOOL-KIT
 - MYSQLTUNER
 - PROXYMYSQL
@@ -30,11 +40,12 @@ Magento installation including: <br/>
 - PHPMYADMIN
 - MAGERUN 2
 - CSF FIREWALL
-- ELK STACK 7
+- ELK 7 STACK
+- GOOGLE AUTH CODE GENERATED
 
 Complete linux stack including: <br/>
 - linux and webstack settings optimization
-- [letsencrypt (certbot)](https://certbot.eff.org/)
+- [letsencrypt (certbot-auto)](https://certbot.eff.org/)
 - [goaccess](http://rt.goaccess.io)
 - iotop
 - sysstat
